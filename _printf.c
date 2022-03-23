@@ -3,8 +3,8 @@
 /**
  * _printf - funcion para imprimir parametros
  * @format: formato a imprimir
- * @i: primer iterador
- * @return int 
+ * @i: iterador
+ * @return int
  */
 
 
@@ -13,8 +13,8 @@ int _printf(const char *format, ...);
 va_list list;
 	int i, len = 0;
 	int (*f)(va_list);
-
-	if (format == NULL)
+	
+	if (format == NULL) //si es NULL retorna error
 	{
 		return (-1);
 	}
@@ -33,7 +33,7 @@ va_list list;
 		{
 			return (-1);
 		}
-		f = get_commands(format + i + 1);
+		f = get_format(format + i + 1);
 		if (f != NULL)
 		{
 			len = len + f(list);
