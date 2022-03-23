@@ -14,14 +14,14 @@ va_list list;
 	int i, len = 0;
 	int (*f)(va_list);
 	
-	if (format == NULL) //si es NULL retorna error
+	if (format == NULL) /*si es NULL retorna error*/
 	{
 		return (-1);
 	}
 
 	va_start(list, format);
 
-	for (i = 0; format[i] != '\0'; i++)
+	for (i = 0; format[i]; i++)
 	{
 		if (format[i] != '%')
 		{
@@ -42,8 +42,8 @@ va_list list;
 		else
 		{
 			_putchar(format[i]);
-			len++;/*igual al numero de veces que se imprime*/
+			len++;//igual al numero de veces que se imprime
 		}
 	}
 	va_end(list);
-	return (len);/*retorna el numero de veces que se imprime*/
+	return (len);//retorna el numero de veces que se imprime
