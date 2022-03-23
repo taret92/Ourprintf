@@ -1,0 +1,48 @@
+	_printf "10/ Nov/ 2021" "_printf man page"
+
+NAME:
+	_printf.c - print string and integers
+
+
+SYNOPSIS:
+
+	int _putchar(char c);
+ 	int _printf(const char *format, ...);
+ 	void print_all(int n);
+ 	int print_char(va_list list);
+ 	int print_string(va_list list);
+ 	int print_int(va_list list);
+ 	int print_dex(va_list);
+ 	int print_pc(va_list __attribute__((unused)) list);
+ 	int (*get_commands(const char *s))(va_list);
+
+DESCRIPTION:
+
+	This is a Printf inspired version, which was developed almost from scratch by Kevin Ramirez and William Cardozo.
+
+	It performs the same printing function.
+
+COMMANDS LIST:
+
+	 %c - Print Character
+	 %s - Print String
+	 %i - Print Decimal
+	 %d - Print Integer
+
+SYNTAXIS:
+
+	_printf("%c", namevariable);
+	_printf("%s", namevariable);
+	_printf("%d", namevariable);
+	_printf("%i", namevariable);
+
+RETURN VALUE:
+
+       When returned successfully, the functions print their corresponding character.
+       On return failure the functions will print error or null.
+
+AUTHORS:
+
+	William Cardozo - @W_anCardozo
+
+	Kevin Ramirez - @xARKEIN
