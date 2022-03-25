@@ -1,24 +1,27 @@
 #include "main.h"
+
 /**
- * _printf - funcion para imprimir parametros
- * @format: formato a imprimir
- * Return: int
+ * _printf - prints parameters
+ * @format: writing format
+ * i: iterator
+ * k: iterator 2
+ * Return: k
  */
+
 int _printf(const char *format, ...)
 {
-va_list list;
-	int i = 0, len = 0; /**inicializar variables*/
+	va_list list;
+	int i, len = 0;
 	int (*f)(va_list);
 
-	while (format[i]) /**condicion para iterar*/
-	{
-	for (; format[i] != '%' && format[i]; i++)
-	if (format == NULL) /*si es NULL retorna error*/
+	if (format == NULL)
 	{
 		return (-1);
 	}
+
 	va_start(list, format);
-	for (i = 0; format[i]; i++)
+
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
@@ -27,8 +30,10 @@ va_list list;
 			continue;
 		}
 		if (format[i + 1] == '\0')
+		{
 			return (-1);
-		f = get_format(format + i + 1);
+		}
+		f = get_commands(format + i + 1);
 		if (f != NULL)
 		{
 			len = len + f(list);
@@ -37,10 +42,9 @@ va_list list;
 		else
 		{
 			_putchar(format[i]);
-			len++;	/**igual al numero de veces que se imprime*/
+			len++;/*contador de el numero de veces que se imprime*/
 		}
 	}
-	}
 	va_end(list);
-	return (len);/**retorna lo que se va a imprimir*/
+	return (len);/*retorna el numero de veces que se imprime*/
 }

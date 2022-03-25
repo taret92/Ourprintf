@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * get_format - entry point
- * @i: variable
+ * get_commands - entry point
+ * i: variable
  * @s: pointer
  * Return: NULL
  */
-int (*get_format(const char *s))(va_list)
+int (*get_commands(const char *s))(va_list)
 {
 	print_f print[] = {
 		{"c", print_char},
@@ -18,9 +18,9 @@ int (*get_format(const char *s))(va_list)
 
 	int i;
 
-	for (i = 0; print[i].format != NULL; i++)
+	for (i = 0; print[i].commands != NULL; i++)
 	{
-		if (*s == *print[i].format)
+		if (*s == *print[i].commands)
 		{
 			return (print[i].f);
 		}
