@@ -13,3 +13,14 @@ What is Printf? printf is a function of the <stdio.h> library of the C language 
 Printf("Parameters", VariableName)
 ````
 
+``Parametros``
+````
+"%c": Print character. print a Character
+"%s": Print String.    print String of characters
+"%d": Print Integer.   print Signed decimal integer
+"%i": Print Interger.  print Signed decimal integer
+````
+
+
+
+ 
