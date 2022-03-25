@@ -38,6 +38,8 @@ output: the first letter of the alphabet is A.
 ````
 
 
+
+
 ![Image text](https://github.com/taret92/printf/blob/main/Diagrama%20Printf.jpg)
 
  
