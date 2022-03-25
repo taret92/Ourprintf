@@ -20,7 +20,17 @@ Printf("Parameters", VariableName)
 "%d": Print Integer.   print Signed decimal integer
 "%i": Print Interger.  print Signed decimal integer
 ````
-blabla
+### Examples
+````
+1. Printing the string of chars "Hello, friends":
+use: print_f("hello %s", friends);
+Output: hello friends
+````
+````
+2. Printing an integer number:
+use: print_f("the sum between 2 + 2 is %d", 4);
+output: the sum between 2 + 2 is 4.
+
 ````
 
 
