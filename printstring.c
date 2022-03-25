@@ -6,18 +6,18 @@
  * s: pointer
  * Return: a
  */
-int print_string(va_list list) /*guarda las strings dadas*/
+int print_string(va_list list) 
 {
-	int a; /*declaramos iterador*/
-	char *s = va_arg(list, char *); /*se le asigna un argumento*/
+	int a; 
+	char *s = va_arg(list, char *);
 
-	if (s == NULL) /*condicion de comparacion al NULL*/
+	if (s == NULL)
 	{
-		s = "(null)"; /*retorna al NULL si se cumple condicion*/
+		s = "(null)";
 	}
-	for (a = 0; s[a] != '\0'; a++) /*recorremos la string*/
+	for (a = 0; s[a] != '\0'; a++)
 	{
 		_putchar (s[a]);
 	}
-	return (a); /*imprime iterador*/
+	return (a);
 }
