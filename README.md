@@ -30,7 +30,11 @@ Output: hello friends
 2. Printing an integer number:
 use: print_f("the sum between 2 + 2 is %d", 4);
 output: the sum between 2 + 2 is 4.
-
+````
+````
+3. printing a caracter:
+use: print_f("the first letter of the alphabet is %c", A);
+output: the first letter of the alphabet is A.
 ````
 
 
