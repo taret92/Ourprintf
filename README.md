@@ -9,6 +9,7 @@ What is Printf? printf is a function of the <stdio.h> library of the C language 
 
 ``sintaxis``
 
-``
-
+````
+Printf("Parameters", VariableName)
+````
 
