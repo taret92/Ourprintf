@@ -1,4 +1,4 @@
-	_printf "10/ Nov/ 2021" "_printf man page"
+	_printf "24/ Mar/ 2022" "_printf man page"
 
 NAME:
 	_printf.c - print string and integers
@@ -43,6 +43,6 @@ RETURN VALUE:
 
 AUTHORS:
 
-	William Cardozo - @W_anCardozo
+	Ivan Ocampo - @taret92
 
 	Kevin Ramirez - @xARKEIN
