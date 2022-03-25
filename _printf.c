@@ -4,8 +4,7 @@
  * _printf - prints parameters
  * @format: writing format
  * i: iterator
- * k: iterator 2
- * Return: k
+ * Return: len
  */
 
 int _printf(const char *format, ...)
