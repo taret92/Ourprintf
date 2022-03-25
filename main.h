@@ -22,7 +22,6 @@ typedef struct print
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-void print_all(int n);
 int print_char(va_list list);
 int print_string(va_list list);
 int print_int(va_list list);
